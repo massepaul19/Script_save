@@ -39,8 +39,10 @@ mkdir -p "$BACKUP_DIR"
 
 #je commence la sauvegarde
 
-echo "Début de la sauvegarde: $(date)" >> "$LOG_FILE"
 
+echo "Début de la sauvegarde automatique a 02h00: $(date)" >> "$LOG_FILE"
+
+echo "Début de la sauvegarde automatique à 02h00 programmé avec cron"
 #synchronisation avec hard links pour les fichiers inchangés
 
 if [ -d "$LATEST_LINK" ]; then

@@ -31,6 +31,8 @@ LOG_FILE="$BACKUP_DIR/rsync_log.txt"
 
 RSYNC_OPTIONS="-av --progress"
 
+ #ici je préfère retirer --delete à cause des fichiers que j'utilise sur windows et qui ne sont pas dans mon ubuntu sinon ca va supprimer cela
+
 #je créé le dossier s'il n'existe pas
 
 mkdir -p "$BACKUP_DIR"
